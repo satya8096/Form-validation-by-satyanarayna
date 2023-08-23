@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Edu+NSW+ACT+Foundation:wght@700&family=Itim&family=Kalam:wght@400;700&family=Kanit:wght@300&family=Laila:wght@400;700&family=Libre+Baskerville&family=Merriweather&family=Niconne&family=Oleo+Script&family=Shrikhand&family=Signika+Negative:wght@600;700&family=Ysabeau+Infant:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-weight: 600;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg,#128354,#256897,#128354);
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.form-container h2{
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 13px black;
+}
+.submit-form{
+    position: relative;
+    width: 330px;
+    padding: 25px;
+    border-radius: 6px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px white;
+    background-color: rgba(255, 255, 255, 0.482);
+    backdrop-filter: blur(6px);
+    /* background-color: aquamarine; */
+}
+.submit-form #name,#email,#pwd,#cpwd{
+    width: 100%;
+    margin: 10px  0px;
+    height: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px black;
+    padding: 4px 3px 4px 4px;
+}
+#check-box{
+    margin: 15px 0px;
+}
+.sub-btn{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px 6px rgb(255, 255, 255);
+    margin: 10px 0px;
+    padding: 3px 0px;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(50, 50, 252);
+    color: white;
+}

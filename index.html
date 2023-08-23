@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Validation by Using the HTML CSS JavaScript</h2>
+        <form class="submit-form" onsubmit=" return validation()">
+            <label for="name">Enter Your Name : <br> <input type="text" placeholder="Enter Your Name" id="name" ><span class="name-span"></span></label><br>
+            <label for="email">Enter Your Email : <br><input type="email" placeholder="Enter Your Email" id="email"><span class="email-span"></span></label><br>
+            <label for="pwd">Password : <br><input type="password" placeholder="Enter Password" id="pwd"><span class="pwd-span"></span></label><br>
+            <label for="cpwd">Confirm-Password : <br><input type="password" placeholder="Confirm-Password" id="cpwd"><span class="cpwd-span"></span></label><label style="margin-left: 150px;" ><input type="checkbox"  class="hidepwd" id="hidepwd" onclick="hidepassword()"> Show Password</label><br>
+            <label><input type="checkbox" id="check-box"> I agree terms & conditions. <br><span class="check-span"></span></label>
+            <label><input type="submit" class="sub-btn" value="Submit"></label>
+        </form>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
