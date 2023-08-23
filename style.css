@@ -35,7 +35,6 @@ body{
     box-shadow: 0px 0px 10px white;
     background-color: rgba(255, 255, 255, 0.482);
     backdrop-filter: blur(6px);
-    /* background-color: aquamarine; */
 }
 .submit-form #name,#email,#pwd,#cpwd{
     width: 100%;
@@ -55,11 +54,11 @@ body{
     border: none;
     outline: none;
     border-radius: 2px;
-    box-shadow: 1px 1px 6px rgb(255, 255, 255);
     margin: 10px 0px;
     padding: 3px 0px;
     width: 100%;
     cursor: pointer;
     background-color: rgb(50, 50, 252);
     color: white;
+    box-shadow: 1px 1px 6px rgb(255, 255, 255);
 }
