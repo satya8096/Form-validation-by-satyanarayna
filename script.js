@@ -23,7 +23,7 @@ function validation(){
 
     const hidepwd = document.querySelector(".hidepwd");
 
-    var status = false
+    var status = false;
 
     if(name.length<3){
         nameSpan.innerHTML = `<i class="fa-solid fa-circle-info"></i> Please Enter Correct Name`
@@ -31,8 +31,7 @@ function validation(){
         status = false
     }
     else{
-        nameSpan.innerHTML = `<i class="fa-solid fa-circle-check"></i> You Enter Correct Name`
-        nameSpan.style.color = "green"
+        nameSpan.innerHTML = ""
         status = false
     }
 
@@ -42,8 +41,7 @@ function validation(){
         status = false
     }
     else{
-        emailSpan.innerHTML = `<i class="fa-solid fa-circle-check"></i> You Enter Correct Email`
-        emailSpan.style.color = "green"
+        emailSpan.innerHTML = ""
         status = false
     }
     if(pwd.length<6){
@@ -52,8 +50,7 @@ function validation(){
         status =  false
     }
     else{
-        pwdSpan.innerHTML = `<i class="fa-solid fa-circle-check"></i> You Enter Correct Password`
-        pwdSpan.style.color = "green"
+        pwdSpan.innerHTML = ""
         status = false
     }
 
@@ -63,8 +60,7 @@ function validation(){
         status = false
     }
     else if(pwd==cpwd){
-        cpwdSpan.innerHTML = `<i class="fa-solid fa-circle-check"></i> You Enter Correct Confirm-Password`
-        cpwdSpan.style.color = "green"
+        cpwdSpan.innerHTML = ""
         status = false
     }
     else{
@@ -74,8 +70,7 @@ function validation(){
     }
 
     if(checkBox.checked){
-        checkSpan.innerHTML = `<i class="fa-solid fa-circle-check"></i> You Clicked Checkbox`
-        checkSpan.style.color = "green"
+        checkSpan.innerHTML = ""
         status = true
     }
     else{
@@ -96,5 +91,25 @@ function hidepassword(){
     else if(pwd.type = "text"){
         pwd.type = "password"
         cpwd.type = "password"
+    }
+}
+
+function pwdStrengthFun(){
+
+    const pwd1 = document.querySelector("#pwd").value;
+
+    const pwdStrength = document.querySelector(".pwdstrength");
+
+    if(pwd1.length<5){
+        pwdStrength.innerHTML = "Strength : Week"
+        pwdStrength.style.color = "red"
+    }
+    else if (pwd1.length<8 && pwd1.length>=5){
+        pwdStrength.innerHTML = "Strength : Good"
+        pwdStrength.style.color = "yellow"
+    }
+    else{
+        pwdStrength.innerHTML = "Strength : Strong"
+        pwdStrength.style.color = "green"
     }
 }

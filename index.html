@@ -19,8 +19,10 @@
         <form class="submit-form" onsubmit=" return validation()">
             <label for="name">Enter Your Name : <br> <input type="text" placeholder="Enter Your Name" id="name" ><span class="name-span"></span></label><br>
             <label for="email">Enter Your Email : <br><input type="email" placeholder="Enter Your Email" id="email"><span class="email-span"></span></label><br>
-            <label for="pwd">Password : <br><input type="password" placeholder="Enter Password" id="pwd"><span class="pwd-span"></span></label><br>
-            <label for="cpwd">Confirm-Password : <br><input type="password" placeholder="Confirm-Password" id="cpwd"><span class="cpwd-span"></span></label><label style="margin-left: 150px;" ><input type="checkbox"  class="hidepwd" id="hidepwd" onclick="hidepassword()"> Show Password</label><br>
+            <label for="pwd" onkeyup="pwdStrengthFun()">Password : <br><input type="password" placeholder="Enter Password" id="pwd"><span class="pwd-span"></span></label><br>
+            <label for="cpwd">Confirm-Password : <br><input type="password" placeholder="Confirm-Password" id="cpwd"><span class="cpwd-span"></span></label>
+            <span class="pwdstrength" style="margin-right: 30px;">Strength : Week</span>
+            <label><input type="checkbox"  class="hidepwd" id="hidepwd" onclick="hidepassword()"> Show Password</label><br>
             <label><input type="checkbox" id="check-box"> I agree terms & conditions. <br><span class="check-span"></span></label>
             <label><input type="submit" class="sub-btn" value="Submit"></label>
         </form>
